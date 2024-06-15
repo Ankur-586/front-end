@@ -28,9 +28,10 @@ console.log(res)
 
 // 2. Write a JavaScript program to find the maximum number in an array. 
 // console.log(arr.sort(function(arr){return arr[-1]}))
+// arr[arr.lenght - 1]
 
 function max_return(arr) {
-    return arr.sort()
+    return arr.sort() 
 }
 const a = [3,4,2,1]
 let max_res = max_return(a)
