@@ -30,8 +30,7 @@ console.log(res)
 // console.log(arr.sort(function(arr){return arr[-1]}))
 
 function max_return(arr) {
-    arr.sort() 
-    return arr[arr.lenght - 1]
+    return arr.sort()
 }
 const a = [3,4,2,1]
 let max_res = max_return(a)
