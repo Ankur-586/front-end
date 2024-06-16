@@ -31,8 +31,20 @@ console.log(res)
 // arr[arr.lenght - 1]
 
 function max_return(arr) {
-    return arr.sort() 
+    return Math.max(...arr)
 }
+
 const a = [3,4,2,1]
 let max_res = max_return(a)
 console.log(max_res)
+
+// 3. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+// Nun, Madam, Racecar
+
+function palin_drome(word) {
+    return word === word.split('')
+}
+
+word = Nun
+let palin_word = palin_drome(word)
+console.log(palin_word)
