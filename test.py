@@ -18,9 +18,18 @@
 # x = "Hello" + 5
 # print(x)
 
-num = 6
-for i in range(2, num):
-    if not num % i == 0:
-        break
-    else:
-        print('prime')
+# num = 6
+# for i in range(2, num):
+#     if not num % i == 0:
+#         break
+#     else:
+#         print('prime')
+
+l = [[1,3],[4,2]]
+
+s = ''
+for i in l:
+    for j in i:
+        s = s + str(j)
+x = list(s)
+print(max(x))

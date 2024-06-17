@@ -94,7 +94,22 @@ console.log(x)
 function check_prime (num) {
     
 }
-
 let prime_number = 4
 let num = check_prime(prime_number)
 console.log(num)
+
+// Write a JavaScript program to find the largest element in a nested array.
+
+function convert(arr) {
+    for (let i = 0 ; i < arr.length; i++) {
+        console.log(arr[i]);
+        for (let j = 0; j <= i; j++) {
+            console.log(arr[j])
+        }
+    }
+}
+
+let array = [[1, 3], [4, 2]];
+convert(array);
+
+// Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
