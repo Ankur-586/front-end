@@ -1,15 +1,4 @@
-/* 
-Note:
-The var keyword was used in all JavaScript code from 1995 to 2015.
-The let and const keywords were added to JavaScript in 2015.
-
-Var Keyword:
-The var keyword should only be used in code written for older browsers.
-Variables declared with let cannot be Redeclared in the same scope
-
-
-*/
-
+"use strict";
 
 let firstName = "John",
 lastName = "Doe",
@@ -42,9 +31,70 @@ console.log(max_res)
 // Nun, Madam, Racecar
 
 function palin_drome(word) {
-    return word === word.split('')
+    return word === word.split('').reverse().join('')
 }
 
-word = Nun
+let word = 'NuN'
 let palin_word = palin_drome(word)
 console.log(palin_word)
+
+// Write a JavaScript program to reverse a given string.
+
+const rev_str = (str) => str.split('').reverse().join('') 
+
+let str = 'pankaj'
+let str_rev = rev_str(str)
+console.log(str_rev) 
+
+// Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+
+function even_nums(array) {
+    return array.filter(num => num % 2 === 0) 
+}
+
+const arr = [1,2,3,5,6]
+let even = even_nums(arr)
+console.log(even)
+
+let _ = 'z'
+console.log(_)
+
+let message;
+
+message = 'Hello!';
+
+message = 'World!'; // value changed
+console.log(message); // returns 'World!'
+
+// 'use strict';
+// let messages = 'This';
+// // repeated 'let' leads to an error
+// let messages = 'That'; // SyntaxError: 'message' has already been declared
+
+"use strict";
+let myVariable = "Hello, JavaScript!";
+console.log(myVariable); // error thrown
+
+// Write a JavaScript program to calculate the factorial of a given number. 
+function fact_num (num){
+    if (num === 0 || num === 1)  {
+        return 1
+    }
+    else {
+        return num * fact_num(num - 1) 
+    }
+}
+
+let number = 5
+let x = fact_num(number)
+console.log(x)
+
+// Write a JavaScript function to check if a given number is prime. 
+
+function check_prime (num) {
+    
+}
+
+let prime_number = 4
+let num = check_prime(prime_number)
+console.log(num)
