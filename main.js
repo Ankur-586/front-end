@@ -101,12 +101,15 @@ console.log(num)
 // Write a JavaScript program to find the largest element in a nested array.
 
 function convert(arr) {
-    for (let i = 0 ; i < arr.length; i++) {
-        console.log(arr[i]);
-        for (let j = 0; j <= i; j++) {
-            console.log(arr[j])
+    let s = '';
+    for (let i of arr) {
+        for (let j of i) {
+            s = s + String(j);
         }
     }
+    let x = Array.from(s);
+    let maxChar = Math.max(...x);  // Finding maximum ASCII value (not the character itself)
+    console.log(String.fromCharCode(maxChar), x);
 }
 
 let array = [[1, 3], [4, 2]];

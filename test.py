@@ -32,4 +32,13 @@ for i in l:
     for j in i:
         s = s + str(j)
 x = list(s)
-print(max(x))
+# print(max(x),x)
+
+# fibo
+num = 10
+num_1 = 0
+num_2 = 1
+for i in range(10):
+    x = num_1 + num_2
+print(x)
+    
