@@ -42,3 +42,8 @@ for i in range(10):
     x = num_1 + num_2
 print(x)
     
+import os 
+
+outputs = {}
+outputs['current_directory_before'] = os.getcwd()
+print(os.listdir())

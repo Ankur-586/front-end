@@ -116,3 +116,13 @@ let array = [[1, 3], [4, 2]];
 convert(array);
 
 // Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
+
+let height = 180;
+{
+    let weight = 70;
+    console.log(height); // -> 180
+    console.log(weight); // -> 70
+}
+console.log(height); // -> 180
+console.log(weight); 
+
