@@ -40,10 +40,25 @@ num_1 = 0
 num_2 = 1
 for i in range(10):
     x = num_1 + num_2
-print(x)
+# print(x)
     
 import os 
 
 outputs = {}
 outputs['current_directory_before'] = os.getcwd()
-print(os.listdir())
+# print(os.listdir())
+
+log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
+index = log.index("[")
+print(log[index+1:index+6])
+
+import re
+log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
+regex = r"\[(\d+)\]"
+result = re.search(regex, log)
+# print(result[1])
+
+import re
+s = 'qwertycatsfruits'
+print(re.search(r'fruits$',s))
+print(re.search(r"p.ng", "Pangaea", re.IGNORECASE)) 

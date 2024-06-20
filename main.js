@@ -126,3 +126,4 @@ let height = 180;
 console.log(height); // -> 180
 console.log(weight); 
 
+chmod +x generate_report.py
