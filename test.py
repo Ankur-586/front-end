@@ -50,7 +50,7 @@ outputs['current_directory_before'] = os.getcwd()
 
 log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
 index = log.index("[")
-print(log[index+1:index+6])
+# print(log[index+1:index+6])
 
 import re
 log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
@@ -59,6 +59,10 @@ result = re.search(regex, log)
 # print(result[1])
 
 import re
-s = 'qwertycatsfruits'
-print(re.search(r'fruits$',s))
-print(re.search(r"p.ng", "Pangaea", re.IGNORECASE)) 
+# s = 'qwertycatsfruits'
+# print(re.search(r'fruits$',s))
+# print(re.search(r"p.ng", "Pangaea", re.IGNORECASE)) 
+
+# Create a regex that finds dates in the format MM/DD/YY or MM/DD/YYYY and returns just the year part.
+s = '06-06-2024'
+print('this one:',re.search(r'(\b\d{2}[/-]\d{2}[/-](\d{2}|\d{4})\b)',s))
