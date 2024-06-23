@@ -65,4 +65,22 @@ import re
 
 # Create a regex that finds dates in the format MM/DD/YY or MM/DD/YYYY and returns just the year part.
 s = '06-06-2024'
-print('this one:',re.search(r'(\b\d{2}[/-]\d{2}[/-](\d{2}|\d{4})\b)',s))
+#print('this one:',re.search(r'(\b\d{2}[/-]\d{2}[/-](\d{2}|\d{4})\b)',s))
+
+s = '+91 8884 154409'
+indian_pattern_mobile = re.search(r"\d{4} \d{6}",s)
+# print(indian_pattern_mobile) 
+
+import pandas as pd
+
+employee_list = [{'Full Name': 'Audrey Miller', 'Username': 'audrey', 'Department': 'Development'}, {'Full Name': 'Arden Garcia', 'Username': 'ardeng', 'Department': 'Sales'}, {'Full Name': 'Bailey Thomas', 'Username': 'baileyt', 'Department': 'Human Resources'}, {'Full Name': 'Blake Sousa', 'Username': 'sousa', 'Department': 'IT infrastructure'}, {'Full Name': 'Cameron Nguyen', 'Username': 'nguyen', 'Department': 'Marketing'}, {'Full Name': 'Charlie Grey', 'Username': 'greyc', 'Department': 'Development'}, {'Full Name': 'Chris Black', 'Username': 'chrisb', 'Department': 'User Experience Research'}, {'Full Name': 'Courtney Silva', 'Username': 'silva', 'Department': 'IT infrastructure'}, {'Full Name': 'Darcy Johnsonn', 'Username': 'darcy', 'Department': 'IT infrastructure'}, {'Full Name': 'Elliot Lamb', 'Username': 'elliotl', 'Department': 'Development'}, {'Full Name': 'Emery Halls', 'Username': 'halls', 'Department': 'Sales'}, {'Full Name': 'Flynn McMillan', 'Username': 'flynn', 'Department': 'Marketing'}, {'Full Name': 'Harley Klose', 'Username': 'harley', 'Department': 'Human Resources'}, {'Full Name': 'Jean May Coy', 'Username': 'jeanm', 'Department': 'Vendor operations'}, {'Full Name': 'Kay Stevens', 'Username': 'kstev', 'Department': 'Sales'}, {'Full Name': 'Lio Nelson', 'Username': 'lion', 'Department': 'User Experience Research'}, {'Full Name': 'Logan Tillas', 'Username': 'tillas', 'Department': 'Vendor operations'}, {'Full Name': 'Micah Lopes', 'Username': 'micah', 'Department': 'Development'}, {'Full Name': 'Sol Mansi', 'Username': 'solm', 'Department': 'IT infrastructure'}]
+
+df = pd.DataFrame(employee_list)
+print(df)
+
+# for employee in employee_list:
+#     emp_str = employee
+    
+
+# with open ('employee_list.csv', 'w') as file:
+    #     file.write(str(employee))
