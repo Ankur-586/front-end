@@ -73,26 +73,30 @@ indian_pattern_mobile = re.search(r"\d{4} \d{6}",s)
 
 
 
-import csv
+def to_seconds(hours, minutes, seconds):
+    return hours*3600+minutes*60+seconds
 
-def read_employees(csv_file):
-    csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
-    employee_file = csv.DictReader(open(csv_file), dialect = 'empDialect')
-    employee_list = []
-    for data in employee_file:
-        employee_list.append(dict(data))    
-    return employee_list
+print("Welcome to this time converter")
 
-def count_dept(emp_data_list):
-    department_list = []
-    for data in emp_data_list:
-        department_list.append(data['Department'])
-    count_dict = {}
-    for dept in sorted(department_list):
-        count_dict[dept] = department_list.count(dept)
-    return count_dict
+cont = "y"
+while(cont.lower() == "y"):
+    hours = int(input("Enter the number of hours: "))
+    minutes = int(input("Enter the number of minutes: "))
+    seconds = int(input("Enter the number of seconds: "))
+
+    print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
+    print()
+    cont = input("Do you want to do another conversion? [y to continue] ")
     
-csv_file_location = r'D:\front-end\automation_task\employee_list_plain.csv'
-emp_data = read_employees(csv_file_location)
-process_emp_data = count_dept(emp_data)
-print(process_emp_data)
+print("Goodbye!")
+
+# Dear Mrs. Nisha Madam
+
+# I would like to inform you that I am resigning from my position as System Analyst, effective 04-04-2024.
+
+# Thank you for all the support and opportunities you have provided me over the years. I have truly enjoyed my time working at Leads Next Tech and am grateful for the encouragement you have given me to pursue my personal and professional development.
+# I will do everything I can to complete my current projects and train other team members or new employees to take over my duties. Please let me know if there is anything else I can do to help during this transition period.
+# I wish the company continued success in the future and hope to stay in touch.
+
+# Sincerely,
+# Ankur
