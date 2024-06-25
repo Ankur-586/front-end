@@ -124,5 +124,8 @@ let height = 180;
     console.log(weight); // -> 70
 }
 console.log(height); // -> 180
-console.log(weight); 
+// console.log(weight); 
 
+pankaj = 'qw'
+console.log(pankaj)
+let pankaj

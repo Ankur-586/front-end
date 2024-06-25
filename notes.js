@@ -24,3 +24,7 @@ BUT adding a number and a string will return a string
 
 When used on strings, the + operator is called the concatenation operator.
 */
+
+// Websites for ls practice
+// https://javascript.info/
+// https://skillsforall.com/launch?id=062c7386-e936-452f-a584-65e0a3355ced&tab=curriculum&view=d6d2a511-b49f-5f3c-9ef7-cece4391c238
