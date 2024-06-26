@@ -126,6 +126,19 @@ let height = 180;
 console.log(height); // -> 180
 // console.log(weight); 
 
-pankaj = 'qw'
+let pankaj = 'qw'
 console.log(pankaj)
-let pankaj
+// let pankaj
+
+// Declare two variables: admin and name.
+// Assign the value "John" to name.
+// Copy the value from name to admin.
+// Show the value of admin using alert (must output “John”).
+
+let namee = 'John'
+let admin = namee
+console.log(admin)
+
+console.log( 0 === false ); // false, because the types are different
+
+console.log("2" > "12")
