@@ -1,24 +1,13 @@
-Steps to setup the project
+JavaScript Notes/Tutorial/Practice links:
+----------------------------------------
 
-Step 1: First create a virtual env file:
-        python -m venv venv
+-> https://www.hellojavascript.info/docs/intro
 
-Step 2: Activate virtual env in windows:
-        venv/Scripts/activate
-        
-        For Ubuntu/linux:
-        source venv/bin/activate
+-> https://api-dev.nourishstore.in/api/store/product/list
 
-Step 3: Run the below commond to install the packages
-        pip install -r requirements.txt
+-> https://youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&si=urzGlz8T4qeO09y8
 
-        below packages will get installed:
-        1. pip install pandas
-        2. pip install fake-useragent
-        3. pip install selenium
+-> https://javascript.info/
 
-Step 4: Run the script:
-        python email_script.py
-
-** To Make requirements.txt file run below commond:
-   pip freeze > requirements.txt
+-> https://skillsforall.com/launch?id=062c7386-e936-452f-a584-65e0a3355ced&tab=curriculum&view=d6d2a511-b49f-5f3c-9ef7-cece4391c238
+   Credentials --> user: Ankur.singh586@gmail.com, pass: Int@x123

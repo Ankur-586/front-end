@@ -28,3 +28,22 @@ When used on strings, the + operator is called the concatenation operator.
 // Websites for ls practice
 // https://javascript.info/
 // https://skillsforall.com/launch?id=062c7386-e936-452f-a584-65e0a3355ced&tab=curriculum&view=d6d2a511-b49f-5f3c-9ef7-cece4391c238
+
+// -------------------
+// Namaste Javascript:
+// -------------------
+
+// Everything in javascript happens inside an Execution Context
+    //             Execution Context
+    //  Memory also known as     |   Code also known as 
+    //  (Variable Environment)   |   (Thread of Execution)
+    //                           |
+    //  It contains variables    |   It is a place where the 
+    //  and functions as key     |   code is executed one line
+    //  value pair.              |   at a time. 
+    //                           
+    // JavaScript is a synchronous single-threaded language
+    // ----------------------------------------------------
+    // --> Single threaded means JavaScript can execute once command at a time
+    // --> Synchronous single-threaded that means JavaScript can execute one command 
+    //     at a time in a specific order.             
