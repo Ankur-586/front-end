@@ -73,22 +73,22 @@ indian_pattern_mobile = re.search(r"\d{4} \d{6}",s)
 
 
 
-def to_seconds(hours, minutes, seconds):
-    return hours*3600+minutes*60+seconds
+# def to_seconds(hours, minutes, seconds):
+#     return hours*3600+minutes*60+seconds
 
-print("Welcome to this time converter")
+# print("Welcome to this time converter")
 
-cont = "y"
-while(cont.lower() == "y"):
-    hours = int(input("Enter the number of hours: "))
-    minutes = int(input("Enter the number of minutes: "))
-    seconds = int(input("Enter the number of seconds: "))
+# cont = "y"
+# while(cont.lower() == "y"):
+#     hours = int(input("Enter the number of hours: "))
+#     minutes = int(input("Enter the number of minutes: "))
+#     seconds = int(input("Enter the number of seconds: "))
 
-    print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
-    print()
-    cont = input("Do you want to do another conversion? [y to continue] ")
+#     print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
+#     print()
+#     cont = input("Do you want to do another conversion? [y to continue] ")
     
-print("Goodbye!")
+# print("Goodbye!")
 
 # Dear Mrs. Nisha Madam
 
@@ -100,5 +100,4 @@ print("Goodbye!")
 
 # Sincerely,
 # Ankur
-
 

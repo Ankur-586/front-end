@@ -30,12 +30,12 @@ When used on strings, the + operator is called the concatenation operator.
 // -------------------
 // Namaste Javascript: https://youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&si=urzGlz8T4qeO09y8
 // -------------------
-// Execution context: the environment in which JavaScript code is executed.
+// Global Execution context: the environment in which JavaScript code is executed.
 
 // Video 1:
-// Everything in javascript happens inside an Execution Context
+// Everything in javascript happens inside an Global Execution Context
 // ---------------------------------------------------------------
-    //             Execution Context
+    //                Global Execution Context
     //  Memory also known as     |   Code also known as 
     //  (Variable Environment)   |   (Thread of Execution)
     //                           |
@@ -51,7 +51,7 @@ When used on strings, the + operator is called the concatenation operator.
 
 // Video 2:
 /* 
--> What happens when you run a js program?
+Q: What happens when you run a js program?
    function square(num) { num is parameter
     var ans = num * num; 
     return ans;
@@ -61,44 +61,46 @@ When used on strings, the + operator is called the concatenation operator.
     var square4 = square(4); 
     console.log(square2,square4)
     // to run js in terminal : node js_notes.js
-
+   
     **** js skims through the whole pgm line by line.
 
-    | My own Written Explaination
-    |------------------------------------------------------------------------------------------------------
-    |Phase 1: Memory creation phase:
-    |------- 
-    |step 1: An execution context is created and it is the Global Execution Context.
-    |step 2: space for variale and functions are assinged in memory part
-    |        n: undefined  (when it allocates memeory to a variable it provides a special value undefined)
-    |        square: {...} (And for function it litreally stores whole code of the function)
-    |        square2 : undefined
-    |        square4 : undefined
-    |
-    |Phase 2: Code exectuion phase: In this all the calculation in the program is done.
-    |--------
-    |    step 1: In this phase the value 2 is being place in the place holder n.
-    |    Phase 1:
-    |    --------
-    |    step 1: when var square2 = square(n); this line runs and function is invoked,
-    |            a new Execution Context is created for the instance square2.
-    |    step 2: now in the Memory creation phase:
-    |            the function's variables get value undefined:
-    |            num: undefined , ans: undefined
-    |    Phase 2: 
-    |    --------
-    |    step 1: Now, in the num varaiable 2 will be assigned to it 
-    |                 and in ans the output of num * num
-    |    Whenever return keyword is encountered , it means the task of function is over and it returns back the control 
-    |    of the program back to the place where it was invoked.
-    |
-    |    ****IMP*** And after that the value which is returned will get stored in:
-    |            square2 : 4 (earlier undefined was stored)
-    |    Now, when the var square2 = square(n); instance of the function (here, square2) done executing  
-    |         then the whole Execution Context (which was created for the instance of function) gets deleted.
-    |    And when var square4 = square(4); this is encountered then the same process will be done.
-    --------------------------------------------------------------------------------------------------------------------
+A: |-------------------------------------------------------------------------------------------------------
+   | My own Written Explaination
+   |------------------------------------------------------------------------------------------------------
+   |Phase 1: Memory creation phase:
+   |------- 
+   |step 1: An execution context is created and it is the Global Execution Context.
+   |step 2: space for variale and functions are assinged in memory part
+   |        n: undefined  (when it allocates memeory to a variable it provides a special value undefined)
+   |        square: {...} (And for function it litreally stores whole code of the function)
+   |        square2 : undefined
+   |        square4 : undefined
+   |
+   |Phase 2: Code exectuion phase: In this all the calculation in the program is done.
+   |--------
+   |    step 1: In this phase the value 2 is being place in the place holder n.
+   |    Phase 1:
+   |    --------
+   |    step 1: when var square2 = square(n); this line runs and function is invoked,
+   |            a new Execution Context is created for the instance square2.
+   |    step 2: now in the Memory creation phase:
+   |            the function's variables get value undefined:
+   |            num: undefined , ans: undefined
+   |    Phase 2: 
+   |    --------
+   |    step 1: Now, in the num varaiable 2 will be assigned to it 
+   |                 and in ans the output of num * num
+   |    Whenever return keyword is encountered , it means the task of function is over and it returns back the control 
+   |    of the program back to the place where it was invoked.
+   |
+   |    ****IMP*** And after that the value which is returned will get stored in:
+   |            square2 : 4 (earlier undefined was stored)
+   |    Now, when the var square2 = square(n); instance of the function (here, square2) done executing  
+   |         then the whole Execution Context (which was created for the instance of function) gets deleted.
+   |    And when var square4 = square(4); this is encountered then the same process will be done.
+   |--------------------------------------------------------------------------------------------------------------------
 
+    
     Below is the more clear systematic by chatgpt:
     1. Memory Creation Phase
     When a JavaScript program runs, the first step is the Memory Creation Phase. Here’s what happens:
@@ -121,5 +123,27 @@ When used on strings, the + operator is called the concatenation operator.
         > The function returns 4, which is stored in square2.
     > After this execution context completes, it is cleaned up, and memory is freed.
     > The same steps occur for var square4 = square(4);, where num takes the value 4, leading to a return value of 16 stored in square4.
+
+|-----------|
+|Call Stack:|
+|-----------|
+> It is basically a stack which maintains the order of execution of execution context. Whenever a code is executed the 
+  Global Execution Context is pushed into the stack first and later on as per the function invocation the  execution context is 
+  pushed into the stack. When the function code is done executing the execution context is popped out and last the Global Execution 
+  Context s also deleted.
+
+> The call stack is also known as Execution context stack, program stack, control stack, Runtime stack, Machine Stack
+
+Key Concepts of the Call Stack
+1. Execution Context:
+   > Every time JavaScript executes code, it creates an execution context. This context includes information about the function being executed, its scope, and variable environment.
+   > There are two main types of execution contexts:
+     . Global Execution Context: Created when the JavaScript engine starts running the code. It represents the global scope.
+     . Function Execution Context: Created whenever a function is invoked.
+2. Stack Operations:
+   . When the global code is executed, the global execution context is pushed onto the stack.
+   . Each time a function is called, a new execution context for that function is created and pushed onto the stack.
+   . After the function finishes executing (either when it reaches a return statement or completes its code), its execution context is popped off the stack.
+   . Finally, when all code execution is complete, the global execution context is also popped off the stack.
 */
 
