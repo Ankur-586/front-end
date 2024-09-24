@@ -1,0 +1,4 @@
+to get the remote git url:
+commond: git ls-remote --get-url origin 
+
+https://github.com/Ankur-586/front-end.git
