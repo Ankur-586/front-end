@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # https://www.youtube.com/watch?v=pF3KXOnxqr4
+# https://proxy2.webshare.io/proxy/list?authenticationMethod=%22username_password%22&connectionMethod=%22direct%22&proxyControl=%220%22&rowsPerPage=10&page=0&order=%22asc%22&orderBy=null&searchValue=%22%22&modals=eyJ1cGdyYWRlRnJvbUZyZWVUb1JlcGxhY2VJbmRpdmlkdWFsT3BlbiI6dHJ1ZX0%253D
 
 def get_proxies():
     proxy_list = {
