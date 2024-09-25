@@ -11,3 +11,10 @@ JavaScript Notes/Tutorial/Practice links:
 
 -> https://skillsforall.com/launch?id=062c7386-e936-452f-a584-65e0a3355ced&tab=curriculum&view=d6d2a511-b49f-5f3c-9ef7-cece4391c238
    Credentials --> user: Ankur.singh586@gmail.com, pass: Int@x123
+
+
+Project Idea: For this project, you can scrape data for any specific product available on Amazon and analyze its customers’ reviews. 
+After scraping, you can do sentiment analysis and perform the necessary statistical analysis to draw insightful conclusions.
+
+Recommended Web Scraping Tool: For this project, we suggest you use Beautiful Soup (Python’s open-source library) as it will allow you 
+to crawl the website and extract the review from the Amazon website using HTML tags.
