@@ -22,3 +22,4 @@ review_url = product_url.replace('dp', 'product-reviews')
 get_reviews(review_url)
 
 # 38.154.227.167:5868:gcauorsz:pjrtnlhwz5i0
+# https://gist.github.com/CodeWithHarry/14fd13acb1afce0a5991255b60aa65f5
