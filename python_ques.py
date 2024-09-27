@@ -117,14 +117,14 @@ indian_pattern_mobile = re.search(r"\d{4} \d{6}",s)
 # print()
 
 # Find the number of occurrences of a character in a String?
-s = 'abbssea'
-s = {}
-for i in range(len(s)-1):
-    c = s[i]
-    if s[i+1] == c:
-        s[c] += 1
-    else:
-        s[c] = 2  # Start count at 2 since we found it twice
+# s = 'abbssea'
+# s = {}
+# for i in range(len(s)-1):
+#     c = s[i]
+#     if s[i+1] == c:
+#         s[c] += 1
+#     else:
+#         s[c] = 2  # Start count at 2 since we found it twice
 
-for char, count in s.items():
-    print(f"{char}: {count}")
+# for char, count in s.items():
+#     print(f"{char}: {count}")\
