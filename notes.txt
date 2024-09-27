@@ -18,3 +18,5 @@ After scraping, you can do sentiment analysis and perform the necessary statisti
 
 Recommended Web Scraping Tool: For this project, we suggest you use Beautiful Soup (Python’s open-source library) as it will allow you 
 to crawl the website and extract the review from the Amazon website using HTML tags.
+
+https://www.simplilearn.com/coding-interview-questions-article

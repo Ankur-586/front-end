@@ -116,15 +116,25 @@ indian_pattern_mobile = re.search(r"\d{4} \d{6}",s)
 #     next_number = num1 + num2
 # print()
 
-# Find the number of occurrences of a character in a String?
-# s = 'abbssea'
-# s = {}
-# for i in range(len(s)-1):
-#     c = s[i]
-#     if s[i+1] == c:
-#         s[c] += 1
-#     else:
-#         s[c] = 2  # Start count at 2 since we found it twice
+# Find the number of occurrences of a characters in a String?
+def count_duplicate(s):
+    dicti = {}
+    for i in s:
+        if i not in dicti:
+            if s.count(i) > 1:
+                dicti[i] = s.count(i)
+    return dicti
 
-# for char, count in s.items():
-#     print(f"{char}: {count}")\
+st = 'abbsea'
+# print(count_duplicate(s))
+
+# How to find out if the given two strings are anagrams or not?
+
+import random
+
+s = 'qwerty'
+split_str = list(s)
+random.shuffle(split_str)
+print(split_str)
+
+# How would you implement the bubble sort algorithm
